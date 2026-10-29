@@ -48,7 +48,7 @@ jobs:
         with:
           name: jars
           path: |
-            bukkit/loader/build/libs/LuckPerms-Bukkit-*.jar
+            bukkit/loader/build/libs/权限组-LuckPerms-Bukkit-*.jar
             bukkit-legacy/loader/build/libs/LuckPerms-Bukkit-Legacy-*.jar
             bungee/loader/build/libs/LuckPerms-Bungee-*.jar
             sponge/loader/build/libs/LuckPerms-Sponge-*.jar

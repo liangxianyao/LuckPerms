@@ -14,13 +14,14 @@ dependencies {
 }
 
 processResources {
+    inputs.property('pluginVersion', project.ext.fullVersion)
     filesMatching('plugin.yml') {
         expand 'pluginVersion': project.ext.fullVersion
     }
 }
 
 shadowJar {
-    archiveFileName = "LuckPerms-Bukkit-${project.ext.fullVersion}.jar"
+    archiveFileName = "权限组-LuckPerms-Bukkit-${project.ext.fullVersion}.jar"
 
     from {
         project(':bukkit').tasks.shadowJar.archiveFile
